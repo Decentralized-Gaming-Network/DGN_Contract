@@ -146,7 +146,7 @@ interface IUniswapV2Router02 {
         );
 }
 
-contract TOKEN is Context, IERC20, Ownable {
+contract DGN is Context, IERC20, Ownable {
     using SafeMath for uint256;
     mapping(address => uint256) private _balances;
     mapping(address => mapping(address => uint256)) private _allowances;
@@ -160,8 +160,8 @@ contract TOKEN is Context, IERC20, Ownable {
 
     uint8 private constant _decimals = 9;
     uint256 private constant _tTotal = 216000000 * 10**_decimals;
-    string private constant _name = unicode"";
-    string private constant _symbol = unicode"";
+    string private constant _name = unicode"DGN";
+    string private constant _symbol = unicode"DGN";
     uint256 public _maxTxAmount = 216000000 * 10**_decimals;
     uint256 public _maxWalletSize = 216000000 * 10**_decimals;
     uint256 public _taxSwapThreshold = 216000 * 10**_decimals;
